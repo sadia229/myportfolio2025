@@ -5,7 +5,7 @@ import { Terminal, Code, User, Briefcase, Mail, Github, Linkedin, Twitter } from
 const Index = () => {
   const [typedText, setTypedText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
-  const fullText = 'Welcome to my digital realm...';
+  const fullText = 'Welcome to my portfolio...';
 
   useEffect(() => {
     if (currentIndex < fullText.length) {
@@ -18,28 +18,21 @@ const Index = () => {
   }, [currentIndex, fullText]);
 
   const skills = [
-    'JavaScript', 'TypeScript', 'React', 'Node.js', 'Python', 'Docker', 
-    'AWS', 'Linux', 'MongoDB', 'PostgreSQL', 'Redis', 'GraphQL'
+    'Flutter', 'Jetpack Compose', 'React', 'Python', 'MySQL', 
+    'MongoDB','GraphQL'
   ];
 
   const projects = [
     {
-      name: 'CyberShield',
-      description: 'Advanced penetration testing framework',
-      tech: ['Python', 'Kali Linux', 'Metasploit'],
-      status: '[CLASSIFIED]'
-    },
+      name: 'Romoni',
+      description: 'Salon and Spa Management System App',
+      tech: ['Flutter', 'Laravel', 'Local Database'],
+      status: ''},
     {
-      name: 'QuantumCrypt',
-      description: 'Next-gen encryption algorithm implementation',
+      name: 'Romoni Partner',
+      description: 'Salon and Spa Management Service Providers App',
       tech: ['C++', 'Cryptography', 'Assembly'],
-      status: '[ACTIVE]'
-    },
-    {
-      name: 'NeuralNet-X',
-      description: 'AI-powered threat detection system',
-      tech: ['Python', 'TensorFlow', 'PyTorch'],
-      status: '[DEPLOYED]'
+      status: ''
     }
   ];
 
@@ -79,13 +72,13 @@ const Index = () => {
           <div className="border border-green-400 p-6 bg-black/50 backdrop-blur-sm">
             <div className="text-green-300 mb-2">$ whoami</div>
             <h1 className="text-4xl font-bold text-white mb-4 glow-text">
-              ALEX CIPHER
+              SADIA AFRIN
             </h1>
             <div className="text-green-400 mb-4 h-8">
               {typedText}<span className="animate-pulse">█</span>
             </div>
             <div className="text-green-300">
-              <span className="text-green-400">&gt;</span> Full Stack Developer | Cybersecurity Enthusiast | Digital Architect
+              <span className="text-green-400">&gt;</span> Mobile Application Developer | Full Stack Developer 
             </div>
           </div>
         </header>
@@ -103,18 +96,29 @@ const Index = () => {
             <div className="text-green-300 mb-2">$ cat about.txt</div>
             <div className="text-green-100 space-y-4">
               <p>
-                Penetrating the digital frontier since 2018. Specializing in crafting secure, 
-                scalable applications while exploring the depths of cybersecurity and AI.
+                I am a passionate Mobile Application Developer with over 3 years of experience 
+                specializing in Flutter and native Android (Kotlin) development.
               </p>
               <p>
-                When I'm not debugging code or hunting vulnerabilities, you'll find me 
-                reverse engineering malware or contributing to open-source security tools.
+                Flutter Apps with elegant and responsive complex UIs
               </p>
-              <div className="text-green-400 mt-4">
+              <p>
+                Custom plugin development for platform-specific features
+              </p>
+              <p>
+                Consume API integration for dynamic, data-driven apps
+              </p>
+              <p>
+                Modular architecture and scalable codebases
+              </p>
+              <p>
+                Experience with unit testing, state management
+              </p>
+              {/* <div className="text-green-400 mt-4">
                 <span className="text-green-300">Status:</span> ONLINE | 
                 <span className="text-green-300"> Location:</span> ENCRYPTED | 
                 <span className="text-green-300"> Clearance:</span> TOP SECRET
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
@@ -193,7 +197,7 @@ const Index = () => {
             <div className="text-green-300 mb-4">$ ./initiate_contact.sh</div>
             <div className="space-y-4">
               <div className="text-green-100">
-                <span className="text-green-400">&gt;</span> Encrypted channels available for secure communication
+                <span className="text-green-400">&gt;</span> Contact Information
               </div>
               <div className="flex gap-6">
                 <a href="#" className="flex items-center gap-2 text-green-300 hover:text-white hover:glow-text transition-all duration-300">
@@ -204,20 +208,16 @@ const Index = () => {
                   <Linkedin className="w-5 h-5" />
                   <span>LinkedIn</span>
                 </a>
-                <a href="#" className="flex items-center gap-2 text-green-300 hover:text-white hover:glow-text transition-all duration-300">
-                  <Twitter className="w-5 h-5" />
-                  <span>Twitter</span>
-                </a>
               </div>
               <div className="text-green-300 mt-4">
-                <span className="text-green-400">Email:</span> cipher@encrypted.domain
+                <span className="text-green-400">Email:</span> sadiaafrin.dev@gmail.com
               </div>
             </div>
           </div>
         </section>
 
         {/* Footer */}
-        <footer className="text-center">
+        {/* <footer className="text-center">
           <div className="border border-green-400 p-4 bg-black/50 backdrop-blur-sm">
             <div className="text-green-300 mb-2">$ uptime</div>
             <div className="text-green-100">
@@ -227,7 +227,7 @@ const Index = () => {
               [CONNECTION SECURED]
             </div>
           </div>
-        </footer>
+        </footer> */}
       </div>
     </div>
   );
